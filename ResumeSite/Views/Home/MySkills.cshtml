@@ -1,0 +1,87 @@
+﻿@model IEnumerable<resume.Domain.Entities.MySkills.MySkills>
+
+
+<!-- Content -->
+<div class="content" data-simplebar>
+	<div class="section mt-0">
+		<h1 class="title title--h1 title__separate">Resume</h1>
+	</div>
+
+	<!-- Experience -->
+	<div class="section">
+		<h2 class="title title--h2"><img class="title-icon" src="/SiteSample/assets/icons/icon-education.svg" alt="" /> Education</h2>
+		<div class="timeline">
+				<!-- Item -->
+				<article class="timeline__item">
+					<h5 class="title title--h3 timeline__title">Shahid rajaee teacher training (SRTTU)  </h5>
+					<span class="timeline__period">2023 — Present</span>
+					<p class="timeline__description">Computer engineering at undergraduate level</p>
+				</article>
+				<!-- Item -->
+			
+		</div>
+	</div>
+	@*
+	<!-- Skills -->
+	<div class="section">
+		<h2 class="title title--h2">My Skills</h2>
+		<div class="box-gray">
+			
+				<!-- Progress -->
+				<div class="progress">
+					<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+						<div class="progress-text"><span>C#</span><span>50%</span></div>
+					</div>
+					<div class="progress-text"><span>C#</span></div>
+				</div>
+			<!-- Progress -->
+			<div class="progress">
+				<div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+					<div class="progress-text"><span>Asp .Net Core</span><span>30%</span></div>
+				</div>
+				<div class="progress-text"><span>Asp .Net Core</span></div>
+			</div>
+			<!-- Progress -->
+			<div class="progress">
+				<div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+					<div class="progress-text"><span>Git</span><span>30%</span></div>
+				</div>
+				<div class="progress-text"><span>Git</span></div>
+			</div>
+
+			<!-- Progress -->
+			<div class="progress">
+				<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+					<div class="progress-text"><span>Design Pattern</span><span> </span></div>
+				</div>
+				<div class="progress-text"><span>Design Pattern</span></div>
+			</div>
+
+		</div>
+	</div>
+	*@
+	 <!-- Skills -->
+	<div class="section">
+		<h2 class="title title--h2">My Skills</h2>
+		<div class="box-gray">
+			@foreach (var item in Model)
+			{
+				<!-- Progress -->
+				<div class="progress">
+					<div class="progress-bar" role="progressbar" aria-valuenow="@item.Percentage" aria-valuemin="0" aria-valuemax="100">
+						<div class="progress-text"><span>@Html.DisplayFor(modelItem => item.MySkillsTitle)</span><span>@Html.DisplayFor(modelItem => item.Percentage)%</span></div>
+					</div>
+					<div class="progress-text"><span>@Html.DisplayFor(modelItem => item.MySkillsTitle)</span></div>
+				</div>
+			}
+
+		</div>
+	</div>
+
+</div>
+
+
+
+
+
+<!-- Content End -->

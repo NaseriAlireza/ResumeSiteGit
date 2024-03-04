@@ -1,0 +1,78 @@
+﻿@model IEnumerable<resume.Domain.Entities.Education.Education>
+
+<!-- Content -->
+<div class="content" data-simplebar>
+	<div class="section mt-0">
+		<h1 class="title title--h1 title__separate">Resume</h1>
+	</div>
+
+	<!-- Experience -->
+	<div class="section">
+		<h2 class="title title--h2"><img class="title-icon" src="/SiteSample/assets/icons/icon-education.svg" alt="" /> Education</h2>
+		<div class="timeline">
+
+			@foreach (var item in Model)
+			{
+
+
+				<!-- Item -->
+				<article class="timeline__item">
+					<h5 class="title title--h3 timeline__title">@Html.DisplayFor(modelItem => item.EducationTitle)</h5>
+					<span class="timeline__period">@Html.DisplayFor(modelItem => item.EducationDuration)</span>
+					<p class="timeline__description">@Html.DisplayFor(modelItem => item.Discription)</p>
+				</article>
+				<!-- Item -->
+			}
+
+			<!--
+			<article class="timeline__item">
+				<h5 class="title title--h3 timeline__title">  </h5>
+				<span class="timeline__period">  </span>
+				<p class="timeline__description">  </p>
+			</article>
+			-->
+			<!-- Item -->
+			<!--
+
+			<article class="timeline__item">
+				<h5 class="title title--h3 timeline__title">  </h5>
+				<span class="timeline__period">  </span>
+				<p class="timeline__description">  </p>
+			</article>
+
+			-->
+
+
+		</div>
+	</div>
+
+	@*
+	<div class="section">
+	<h2 class="title title--h2"><img class="title-icon" src="/SiteSample/assets/icons/icon-experience.svg" alt="" /> Experience</h2>
+	<div class="timeline">
+	<!-- Item -->
+	<article class="timeline__item">
+	<h5 class="title title--h3 timeline__title">Creative Director</h5>
+	<span class="timeline__period">2015 — Present</span>
+	<p class="timeline__description">Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas molestias exceptur.</p>
+	</article>
+
+	<!-- Item -->
+	<article class="timeline__item">
+	<h5 class="title title--h3 timeline__title">Art Director</h5>
+	<span class="timeline__period">2013 — 2015</span>
+	<p class="timeline__description">Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur.</p>
+	</article>
+
+	<!-- Item -->
+	<article class="timeline__item">
+	<h5 class="title title--h3 timeline__title">Web Designer</h5>
+	<span class="timeline__period">2010 — 2013</span>
+	<p class="timeline__description">Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur.</p>
+	</article>
+	</div>
+	</div>
+	*@
+
+
+</div>

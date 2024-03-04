@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+
+<!--  from netgon.net/artstyles/v-card2/
+
+.html by /3.x , Fri, 10 Sep 2021 12:23:23 GMT -->
+<head>
+	<meta charset="utf-8" />
+	<title>Resume</title>
+
+	<!-- Meta Data -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="format-detection" content="address=no" />
+	<meta name="author" content="ArtTemplate" />
+	<meta name="description" content="vCard" />
+
+	<!-- Twitter data -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@@ArtTemplates">
+	<meta name="twitter:title" content="vCard">
+	<meta name="twitter:description" content="vCard">
+	<meta name="twitter:image" content="/SiteSample\assets/images/social.html">
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="ArtTemplate" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="your url website" />
+	<meta property="og:image" content="/SiteSample\assets\images\social.html" />
+	<meta property="og:description" content="vCard" />
+	<meta property="og:site_name" content="vCard" />
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="144x144" href="/SiteSample\assets/images/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/SiteSample\assets/images/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/SiteSample\assets/images/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="/SiteSample\assets/images/favicons/apple-touch-icon-57x57.png">
+	<link rel="shortcut icon" href="/SiteSample\assets/images/favicons/favicon.png" type="image/png">
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="/SiteSample\assets/styles/style.css" />
+	<link rel="stylesheet" type="text/css" href="/SiteSample\assets/demo/style-demo.css" />
+
+</head>
+<body class="bg-triangles-2">
+	<!-- Preloader -->
+
+	<main class="main">
+		<!-- Menu -->
+		<div class="circle-menu">
+			<div class="hamburger">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="hamburger__text">MENU</div>
+			</div>
+		</div>
+
+		<div class="nav-wrap">
+			<ul class="nav">
+				<li class="nav__item"><a asp-area="" asp-controller="Admin" asp-action="Index">Admin Page</a></li>
+				<li class="nav__item"><a class="active" asp-area="" asp-controller="Home" asp-action="Blog">Blog</a></li>
+				<li class="nav__item"><a asp-area="" asp-controller="Game" asp-action="Login">Game</a></li>
+				<li class="nav__item"><a  asp-area="" asp-controller="Home" asp-action="Index">Resume</a></li>
+
+			</ul>
+		</div>
+
+		<div class="wrapper">
+			<!-- Sidebar -->
+			<aside class="sidebar" data-simplebar>
+				<div>
+					<div class="avatar-wrap">
+						<svg class="avatar avatar--180" viewBox="0 0 188 188">
+							<g class="avatar__box">
+								<image xlink:href="/SiteSample/assets/img/avatar-1-Profile.jpg" height="100%" width="100%" />
+							</g>
+						</svg>
+					</div>
+					<div class="text-center">
+						<h3 class="title sidebar__user-name"><span class="weight--500"> Alireza </span> Naseri </h3>
+						<div class="badge badge--gray">Backend Developer</div>
+
+						<!-- Social -->
+						<!--
+							<div class="social">
+						<a class="social__link" href="https://www.facebook.com/" target="_blank"><i class="font-icon icon-facebook"></i></a>
+						<a class="social__link" href="https://www.behance.com/" target="_blank"><i class="font-icon icon-twitter"></i></a>
+						<a class="social__link" href="https://www.linkedin.com/" target="_blank"><i class="font-icon icon-linkedin2"></i></a>
+							</div>
+						-->
+
+					</div>
+
+					<ul class="contact-block">
+						<li class="contact-block__item" data-toggle="tooltip" data-placement="top" title="Birthday">
+							<i class="font-icon icon-calendar2"></i>April 12,2004
+						</li>
+						@* <li class="contact-block__item" data-toggle="tooltip" data-placement="top" title="Address">
+							<i class="font-icon icon-map-pin"></i>Iran , Minab
+						</li> *@
+						<li class="contact-block__item" data-toggle="tooltip" data-placement="top" title="E-mail">
+							<a href="mailto:naseri.alireza.baziari@mail.com"><i class="font-icon icon-mail"></i>naseri.alireza.baziari<br />@@gmail.com</a>
+						</li>
+						<li class="contact-block__item" data-toggle="tooltip" data-placement="top" title="Phone">
+							<i class="font-icon icon-smartphone"></i>09164186848
+						</li>
+
+
+
+						<!--
+							<li class="contact-block__item" data-toggle="tooltip" data-placement="top" title="Skype">
+							<a href="skype:skype-example"><i class="font-icon icon-skype"></i>Felecia_Brown</a>
+							</li>
+						-->
+
+
+					</ul>
+				</div>
+
+				<!-- start costum html_css For social-->
+
+				<style>
+
+					<!-- Start css 1 -->
+					html {
+						font-family: 'Roboto', sans-serif;
+						font-size: 16px;
+						line-height: 1em;
+						height: 100%;
+					}
+
+					.btn1 {
+						clear: both;
+						white-space: nowrap;
+						font-size: .8em;
+						display: inline-block;
+						border-radius: 5px;
+						box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.35);
+						margin: 2px;
+						-webkit-transition: all .5s;
+						-moz-transition: all .5s;
+						transition: all .5s;
+						overflow: hidden
+					}
+
+						.btn1:hover {
+							box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.45);
+						}
+
+						.btn1:focus {
+							box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.4);
+						}
+
+						.btn1 > span {
+							float: left;
+							padding: 13px;
+							-webkit-transition: all .5s;
+							-moz-transition: all .5s;
+							transition: all .5s;
+							line-height: 1em
+						}
+
+						.btn1 > span {
+							padding: 14px 18px 16px;
+							white-space: nowrap;
+							color: #FFF;
+							background: #b8b8b8
+						}
+
+						.btn1:focus > span {
+							background: #9a9a9a
+						}
+
+
+
+					/*Instagram*/
+					.btn-instagram > span {
+						background: #990520
+					}
+
+					/*Github*/
+					.btn-github > span {
+						background: #262525
+					}
+
+					/*LinkedIn*/
+					.btn-linkedin > span {
+						background: #007bb6
+					}
+
+					<!-- End css 1 -->
+
+				</style>
+
+				<!--Start html 1 -->
+				<a class="btn1  btn-instagram" href="https://www.instagram.com/alireza_naseriiiii" target="_blank"><i class="fa fa-instagram"></i><span>Instagram</span></a>
+				<a class="btn1 btn-github" href="https://github.com/NaseriAlireza" target="_blank"><i class="fa fa-github"></i><span>github</span></a>
+				<a class="btn1  btn-linkedin" href="https://www.linkedin.com/in/alireza-naseri-b5b82b2a6" target="_blank"><i class="fa fa-linkedin"></i><span>LinkedIn</span></a>
+				<!--End html 1 -->
+				<!-- End costum html_css For social -->
+
+				<a class="btn" href="/ResumePdfFile/علیرضا_ناصری-fa.pdf" target="_blank"><i class="font-icon icon-download"></i> Download Resume </a>
+			</aside>
+
+			@RenderBody()
+
+		</div>
+		<!-- Wrapper End -->
+	</main>
+
+
+
+	<!-- SVG masks -->
+	<svg class="svg-defs">
+		<clipPath id="avatar-box">
+			<path d="M1.85379 38.4859C2.9221 18.6653 18.6653 2.92275 38.4858 1.85453 56.0986.905299 77.2792 0 94 0c16.721 0 37.901.905299 55.514 1.85453 19.821 1.06822 35.564 16.81077 36.632 36.63137C187.095 56.0922 188 77.267 188 94c0 16.733-.905 37.908-1.854 55.514-1.068 19.821-16.811 35.563-36.632 36.631C131.901 187.095 110.721 188 94 188c-16.7208 0-37.9014-.905-55.5142-1.855-19.8205-1.068-35.5637-16.81-36.63201-36.631C.904831 131.908 0 110.733 0 94c0-16.733.904831-37.9078 1.85379-55.5141z" />
+		</clipPath>
+		<clipPath id="avatar-hexagon">
+			<path d="M0 27.2891c0-4.6662 2.4889-8.976 6.52491-11.2986L31.308 1.72845c3.98-2.290382 8.8697-2.305446 12.8637-.03963l25.234 14.31558C73.4807 18.3162 76 22.6478 76 27.3426V56.684c0 4.6805-2.5041 9.0013-6.5597 11.3186L44.4317 82.2915c-3.9869 2.278-8.8765 2.278-12.8634 0L6.55974 68.0026C2.50414 65.6853 0 61.3645 0 56.684V27.2891z" />
+		</clipPath>
+	</svg>
+
+
+	<!-- JavaScripts -->
+	<script src="/SiteSample/assets/js/jquery-3.4.1.min.js"></script>
+	<script src="/SiteSample/assets/js/plugins.min.js"></script>
+	<script src="/SiteSample/assets/js/common.js"></script>
+
+	<script src="/SiteSample/assets/demo/plugins-demo.js"></script>
+</body>
+<!--  from netgon.net/artstyles/v-card2/resume.html by /3.x , Fri, 10 Sep 2021 12:23:23 GMT -->
+</html>
+
+
