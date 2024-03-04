@@ -1,5 +1,6 @@
 ﻿#region using
 using Microsoft.AspNetCore.Mvc;
+using resume.Application.DTO.Home_Index;
 using resume.Application.Services;
 #endregion
 
@@ -19,10 +20,17 @@ namespace Resume.presenation.Controllers
         }
         public  IActionResult Index()
         {
-			ViewBag.EducatinList = EducationContext.GetAll();
-            ViewBag.MySkillsList = MySkillsContext.GetAll();
+            //ViewBag.EducatinList = EducationContext.GetAll();
+            //ViewBag.MySkillsList = MySkillsContext.GetAll();
 
-			return View();
+            MyskillsandEducation myskills_Education_list = new()
+            {
+                myskillslist = MySkillsContext.GetAll(),
+                educationslist = EducationContext.GetAll()
+
+            };
+
+			return View(myskills_Education_list);
         }
         public IActionResult Education()
         {

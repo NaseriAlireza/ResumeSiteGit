@@ -1,6 +1,8 @@
-﻿@{
-	var educations = ViewBag.EducatinList as List<resume.Domain.Entities.Education.Education>;
-	var myskills = ViewBag.MySkillsList as List<resume.Domain.Entities.MySkills.MySkills>;
+﻿@model resume.Application.DTO.Home_Index.MyskillsandEducation;
+
+@{
+	// var educations = ViewBag.EducatinList as List<resume.Domain.Entities.Education.Education>;
+	// var myskills = ViewBag.MySkillsList as List<resume.Domain.Entities.MySkills.MySkills>;
 }
 
 
@@ -15,7 +17,7 @@
 		<h2 class="title title--h2"><img class="title-icon" src="/SiteSample/assets/icons/icon-education.svg" alt="" /> Education</h2>
 		<div class="timeline">
 			<!-- Item -->
-			@foreach (var item in educations)
+			@foreach (var item in Model.educationslist)
 			{
 			<article class="timeline__item">
 					<h5 class="title title--h3 timeline__title">@item.EducationTitle</h5>
@@ -31,7 +33,7 @@
 	<div class="section">
 		<h2 class="title title--h2">My Skills</h2>
 		<div class="box-gray">
-			@foreach (var item in myskills)
+			@foreach (var item in Model.myskillslist)
 			{
 				<!-- Progress -->
 				<div class="progress">
